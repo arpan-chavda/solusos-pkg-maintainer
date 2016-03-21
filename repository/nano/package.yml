@@ -1,0 +1,16 @@
+name       : nano
+version    : 2.5.1
+release    : 1
+source     :
+    - http://www.nano-editor.org/dist/v2.5/nano-2.5.1.tar.gz : e06fca01bf183f4d531aa65a28dffc0e2d10185239909eb3de797023f3453bde
+license    : GPL-3.0
+summary    : nano editor inspired by pico
+description: |
+    Nano editor build my self
+
+setup      : |
+    %configure --enable-utf8 --docdir=/usr/share/doc/nano
+build      : |
+    %make
+install    : |
+    %make_install
